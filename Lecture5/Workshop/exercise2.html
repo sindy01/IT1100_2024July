@@ -1,0 +1,56 @@
+<!-- 
+
+Exercise 2
+
+Write a CSS code to change the background colour 
+of the button into yellow with the text colour red 
+using inline style method. 
+
+Create a JavaScript function called as matchPassword() 
+to match the password field with the Re-enter password 
+field and Call the function on the button (“Submit”) 
+click event.
+
+-->
+
+<html>
+	<head>
+		<title> Function Exercise using JS </title>
+		<script>
+			function matchPassword()
+			{
+				var pw1 = document.getElementById("pwd").value;
+				var pw2 = document.getElementById("cpwd").value;
+				
+				if(pw1 != pw2)
+				{
+					alert("Passwords not matching");
+				}
+				else
+				{
+					alert("Passwords matching");
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<form method="post" action="test_NU.php">
+		<fieldset style="width:25%;">
+		<legend> <b> Check Password </b> </legend>
+			Password:
+			<br>
+			<input type="password" id="pwd" required>
+			<br><br>
+			<label> Re-enter Password : </label>
+			<br>
+			<input type="password" id="cpwd" required>
+			<br>
+		</fieldset>
+		<br>
+		<input type="button" id="btnSubmit" value="Submit"
+		style="color:red; background-color:yellow;" 
+		onclick="matchPassword()">
+		</form>
+	</body>
+</html>

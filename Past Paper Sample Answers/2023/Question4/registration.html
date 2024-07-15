@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ 	<title> Registration Form </title> 
+</head> 
+ 
+<body> 
+
+<form action = "StudentRegistration.php" method = "POST"> 
+
+<center> 
+<h2> Student Registration Form </h2> 
+</center>
+ 
+<fieldset>
+<legend> <h3> Personal Details </h3> </legend>
+ 	 
+Student Name:<br/> 
+<input type="text" name="firstname" required> <br/><br/>   
+ 	 
+Gender:<br/> 
+<input type="radio" name="gender" value="Male"> Male  
+<input type="radio" name="gender" value="Female">Female <br/><br/> 
+ 	 
+Mobile Number:<br/>  
+<input type="phone" name="mobile"  pattern="[0-9]{10}"> <br/><br/>  
+ 	 
+E-mail:<br/> 
+<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.]+\.[a-z]{2,3}" required>
+<br><br/> 
+ 	 
+Address:<br/> 
+<textarea name="address" rows="2" cols="50" required> </textarea> 
+<br><br/> 
+ 	 
+</fieldset> 
+<br/> 
+ 	 
+<fieldset> 
+<legend> <h3> User Account Details </h3> </legend> 
+ 	 
+User Name:<br/> 
+<input type="text" name="username" required> <br/><br/> 
+ 	 
+Password:<br/> 
+<input type="password" id="pwd" required> <br/><br/> 
+ 	 
+<input class="inputStyle" id="checkBox" type="checkbox">  
+Accept privacy policy and terms. <br/><br/> 
+ 	 
+<center> <input type="submit" id="submitBtn" value="Submit"> </center> 
+
+</form> 
+ 
+</body> 
+</html> 

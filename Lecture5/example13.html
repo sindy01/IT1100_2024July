@@ -1,0 +1,33 @@
+<!-- JavaScript Document Object Model (DOM) -->
+
+<html>
+<head>
+	<title>
+		JavaScript | Slide 25
+	</title>
+	<script>
+	function displayGreeting() 
+	{
+		// Read the value
+		var name = document.getElementById("txtName").value;
+		// Display output
+		document.getElementById("divOutput").innerHTML = "Hello " + name;
+	}
+	</script>
+</head>
+<body>
+
+<form>
+
+	<input type="text" id="txtName">
+	<button type="button" onclick="displayGreeting()">Display Greeting</button>
+	
+	<div id="divOutput"></div>
+	
+</form>
+
+</body>
+</html>
+
+
+

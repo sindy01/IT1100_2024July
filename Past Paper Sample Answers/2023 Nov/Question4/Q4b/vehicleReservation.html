@@ -1,0 +1,44 @@
+<html>
+<body>
+
+<form action="vehicleRegistration.php" method="post">
+
+<h2>Vehicle Reservation</h2>
+
+<fieldset style="width:300px;"> 
+<legend>Customer Information</legend> 
+Customer Name:<br>
+<input type="text" name="name"><br> 
+Phone Number:<br>
+<input type="tel" name="phone"><br> 
+Email:<br>
+<input type="email" name="email"><br> 
+Pick up Address :<br>
+<textarea cols="30" rows="4" name="address"></textarea> <br>
+</fieldset><br>
+
+<fieldset style="width:300px;"> 
+<legend>Vehicle Information</legend>
+Vehicle type:<br>
+<select name="vehicle_type">
+<option value="car">Car<option>
+<option value="van">Van<option>
+</select><br><br>
+Air Condition <br>
+<input type="radio" name="airCondition" value="yes" checked> With AC
+<input type="radio" name=" airCondition" value="no"> Without AC <br>
+</fieldset><br>
+
+<fieldset style="width:300px;"> 
+<legend>Trip Duration</legend> 
+Start Date : <input type="date" name="startDate"> 
+<br><br>
+End Date : <input type="date" name="endDate">
+<br>
+<input type="button" name="submit" value="Submit">
+</fieldset>
+
+</form>
+
+</body>
+</html>

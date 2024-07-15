@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Registration Form </title>
+
+<style>
+
+#change
+{ 
+    color:green; 
+    background-color:yellow; 
+    font-size:28px; 
+    text-align:center; 
+}
+
+</style>
+
+<script> 
+
+function calculate() 
+{
+    var num1 = parseInt(document.getElementById("no1").value);
+    
+    var num2 = parseInt(document.getElementById("no2").value);
+    
+    var sign = document.getElementById("oper").value; 
+
+    if (sign == '+') 
+    {
+        result = num1 + num2; 
+    }
+    else if (sign == '-') 
+    {
+        result = num1 - num2; 
+    }
+    else if (sign == '*') 
+    {
+        result = num1 * num2; 
+    }
+    else if (sign == "/")
+    {
+        result = num1 / num2; 
+    }
+    else
+    {
+        alert("Please enter + or - or * or /");
+    }
+    document.getElementById("lblresult").innerHTML = "Result is: " + result;
+}
+
+</script>
+
+</head>
+<body>
+
+<fieldset style = "width:25%;"> 
+<legend> <h3> Simple Calculator </h3> </legend> 
+<center>
+<b> Number 1 </b> <input type = "text" id = "no1"> <br> <br> 
+<b> Number 2 </b> <input type = "text" id = "no2"> <br> <br> 
+<b> Operator : </b> <input type = "text" id = "oper"> <br> <br> 
+<label id = "lblresult"> </label>
+</center>
+</fieldset>
+<br>
+<input type = "button" value = "Calculate" id = "change" onclick = "calculate()">
+
+</body>
+</html>

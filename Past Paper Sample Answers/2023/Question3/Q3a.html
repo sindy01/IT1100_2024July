@@ -1,0 +1,39 @@
+<html> 
+<head> 
+ 	<title> Registration Form </title> 
+ 
+ 	<script> 
+ 	 	function matchPassword()
+		{   	 	
+			var pw1 = document.getElementById("pwd").value; 
+			var pw2 = document.getElementById("confirmpwd").value;	 	
+			if(pw1 != pw2)
+			{ 	 
+				 alert("Passwords did not match");  
+			}  
+			else 
+			{ 
+				alert("Password created successfully");
+			} 
+ 	 	} 
+ 	</script> 
+</head> 
+
+<body> 
+
+ 	<fieldset style = "width:25%;"> 
+ 	<legend><h3> Password Checker </h3></legend> 
+ 	 
+ 	Password:<br/> 
+ 	<input type = "password" id = "pwd" required> <br/><br/> 
+ 	Re-enter Password:<br/> 
+ 	<input type = "password" id = "confirmpwd" required> <br/><br/> 
+ 	</fieldset> 
+ 	<br/> 
+ 	 
+ 	<input type = "button" id = "submitBtn" value = "Submit"   	
+	style = "color:red; background-color:yellow;" 
+ 	onclick = "matchPassword()"> 
+ 
+</body> 
+</html> 

@@ -1,0 +1,27 @@
+<!-- JavaScript Event Handling -->
+
+<html>
+<head>
+	<title>
+		JavaScript | Slide 34 | Event registration using addEventListener()
+	</title>
+</head>
+<body>
+
+<input type="text" id="inTxt">
+
+<button id="myBtn"> Click Me Please </button>
+
+<p id="demo"> </p> 
+
+<script>
+
+document.getElementById("myBtn").addEventListener("click", function()
+{
+      document.getElementById("demo").innerHTML = document.getElementById("inTxt").value;
+});
+
+</script>
+
+</body>
+</html>

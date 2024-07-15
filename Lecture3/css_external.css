@@ -1,0 +1,37 @@
+/*Usage of External Style Sheet CSS*/
+
+
+.MainFont
+{
+	font: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+} 
+
+.MainFont_1
+{
+	font:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+    color:blue;
+}
+   
+.MainFont_2
+{
+	font:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+    color:red;
+}
+
+#id_sliit
+{
+	color:orange;
+}
+
+#id_nu
+{
+	color:#22ACC2;
+}
+
+h3
+{
+	color:#20224F;
+}

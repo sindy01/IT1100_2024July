@@ -1,0 +1,46 @@
+<!-- JavaScript Array Methods -->
+
+<html>
+<head>
+	<title> JS Array Methods </title> 
+</head>
+
+<body>
+	<script>
+		var letters = ["N", "O", "R", "T", "H", "E", "R", "N"];
+		document.write("The content in 'letters' array is " + letters);
+		document.write("<br><br>");
+		
+		var numbers = letters.length;
+		document.write("Elements in the 'letters' array is " + numbers);
+		document.write("<br><br>");
+		document.write("First element in 'letters' array is " + letters[0]);
+		document.write("<br><br>");
+		document.write("Second element in 'letters' array is " + letters[1]);
+		document.write("<br><br>");
+		
+		letters.pop();
+		document.write("The content after pop() method is " + letters);
+		document.write("<br><br>");
+		
+		letters.push('N');
+		document.write("The content after push('N') method is " + letters);
+		document.write("<br><br>");
+		
+		letters.shift();
+		document.write("The content after shift() is " + letters);
+		document.write("<br><br>");
+		
+		letters.unshift('N');
+		document.write("The content after unshift('N') is " + letters);
+		document.write("<br><br>");
+		
+		letters[8]='U';
+		letters[9]='N';
+		letters[10]='I';
+		
+		document.write("The content in 'letters' array is " + letters);
+		document.write("<br><br>");
+	</script>
+</body>
+</html>

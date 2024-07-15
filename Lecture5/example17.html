@@ -1,0 +1,37 @@
+<!-- JavaScript Event Handling -->
+
+<html>
+<head>
+	<title>
+		JavaScript | Slide 33 | Event registration using addEventListener()
+	</title>
+</head>
+
+<body>
+
+<button id="btnTest"> Try me </button>
+
+<script>
+
+var btn = document.getElementById("btnTest");
+
+//Attaching a click event listener to the button
+//When the button is clicked, the code inside the event listener function is executed
+btn.addEventListener("click", function() 
+{
+    alert("Let's learn about Event Registration");
+}
+);
+
+/* It is good to separate the JS from HTML as much as possible, 
+towards increasing the modifiability.
+By using the addEventListener() function, 
+we can eliminate the HTML event attributes */
+
+</script>
+
+</body>
+</html>
+
+
+
